@@ -1,17 +1,112 @@
-<!-- change this file -->
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Insert Favicon -->
-    <meta />
-    <!-- Insert Description -->
-    <meta />
-    <!-- Page Title -->
-    <title>First Practice</title>
-  </head>
-  <body>
-    <!-- create small page using mentioned tags in ReadMe.md -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMP Studio</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <meta name="description" content="KMP Studio Landing Page">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="position: sticky; top: 0; z-index: 1;">
+        <div class="header">
+            <button class="btn" onclick="toggleVisibility()"><img src="img/menu.png" alt="Menu Button For Other Option" width="40"></button>
+            <a href="https://www.youtube.com/c/KMPStudio"><img class="logo" src="img/logo.png" alt="kmp studio logo" width="155"></a>
+            <button class="btn"><img src="img/search.png" alt="search Button For Searching items" width="40"></button>
+        </div>
+        <nav class="navbar">
+            <a class="navitem" href="">Home</a>
+            <a class="navitem" href="https://www.youtube.com/c/KMPStudio">Course</a>
+            <a class="navitem" href="https://zil.ink/kmp_studio">Links</a>
+            <a class="navitem" href="#foot">About</a>
+        </nav>
+    </header>
+    <main class="main">
+        <aside class="side" id="side">
+            <ul class="side-menu" style="position: sticky; top: 10rem; z-index: 1;">     
+                <li class="list-item"><a class="current-list-link-style" href="">Home</a></li>
+                <li class="list-item">
+                    <a class="list-link-style" href="https://www.youtube.com/c/KMPStudio">Course</a>
+                    <ul class="under-side-menu">
+                        <li class="under-list-item"> <a class="under-list-link-style" href="https://youtube.com/playlist?list=PLOu_ElUnVzBLZc3AOQHK7KrF5pz-yX_-Z&si=_OBL9ILO21ctERO1">Mobile Graphy</a></li>
+                        <li class="under-list-item"> <a class="under-list-link-style" href="https://youtube.com/playlist?list=PLOu_ElUnVzBJRqnVLkm14gvEuFd6TDWLx&si=qs2ex8MiqDddtGx1">Mobile Software</a></li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <a class="list-link-style" href="https://zil.ink/kmp_studio">Links</a>
+                    <ul class="under-side-menu">
+                        <li class="under-list-item"> <a class="under-list-link-style" href="https://telegram.me/kmp_Studio">Telegram</a></li>
+                        <li class="under-list-item"> <a class="under-list-link-style" href="https://instagram.com/kmp__studio">Instagram</a></li>
+                    </ul>
+                </li>
+                <li class="list-item"><a class="list-link-style" href="#foot">About</a></li>
+            </ul>
+        </aside>
+        <div style="width: 100%;">
+            <div class="start">
+                <a href="https://www.youtube.com/c/KMPStudio"><img class="profile" src="img/profile.jpg" alt="Kmp studio profile picture" width="120" height="120"></a>
+                <div>
+                    <a style="text-decoration: none; color: black;" href="https://www.youtube.com/c/KMPStudio"><h1 class="title"> <span style="color: red;">KMP</span> STUDIO</h1></a>
+                    <p class="subtitle">Welcome to my site. <b>This is just a test for learning html (and css)</b></p>    
+                </div>
+            </div>
+            <section class="content1">
+                <div style="width: 50%; margin-right: 5rem;">
+                    <h2 style="color: #6994c9;">Mobile Graphy Course</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime officiis minima quisquam eos dignissimos ex,
+                    distinctio reprehenderit a qui rerum similique nihil repellat et dolor sequi. Quia magni perferendis placeat. Lorem ipsum dolor sit,,
+                    amet consectetur adipisicing elit. Dolor, sint! Ea tenetur obcaecati amet? Nemo qui at mollitia ad voluptatem corporis ullam minus quae aperiam? Obcaecati,
+                    minima maiores. Ab, nesciunt.</p>
+                    <a href="https://youtube.com/playlist?list=PLOu_ElUnVzBLZc3AOQHK7KrF5pz-yX_-Z&si=_OBL9ILO21ctERO1"><button class="btnwatch">Watch On Youtube</button></a>
+                </div>
+                    <img class="cover1" src="img/mobilegraphy.jpg" alt="cover of mobilegraphy playlist" width="500">
+            </section>
+            <section class="content2">
+                <div style="width: 50%; margin-right: 5rem;">
+                    <h2 style="color: #7d84b5;">Mobile Software Course</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime officiis minima quisquam eos dignissimos ex,
+                    distinctio reprehenderit a qui rerum similique nihil repellat et dolor sequi. Quia magni perferendis placeat. Lorem ipsum dolor sit,,
+                    amet consectetur adipisicing elit. Dolor, sint! Ea tenetur obcaecati amet? Nemo qui at mollitia ad voluptatem corporis ullam minus quae aperiam? Obcaecati,
+                    minima maiores. Ab, nesciunt.</p>
+                    <a href="https://youtube.com/playlist?list=PLOu_ElUnVzBJRqnVLkm14gvEuFd6TDWLx&si=qs2ex8MiqDddtGx1"><button class="btnwatch" onclick="">Watch On Youtube</button></a>
+                </div>
+                    <img class="cover2" src="img/mobilesoftware.jpg" alt="cover of mobilesoftware playlist" width="500">
+            </section>
+            <section class="content3">
+                <div style="width: 50%; margin-right: 5rem;">
+                    <h2 style="color: #ff3333;">Links & Sample Video , Audio</h2>
+                    <table style="border:2px solid #112D4E; background-color: #ffefef;">
+                        <tr>
+                            <th>App</th>
+                            <th>Function</th>
+                            <th>Link</th>
+                        </tr>
+                        <tr>
+                            <td><a href="https://telegram.me/kmp_Studio"><img src="img/telegram.png" alt="tellegram icon" width="30"></td></a>
+                            <td>Fies & Datas</td>
+                            <td><a style="text-decoration: none; color: dodgerblue;" href="https://telegram.me/kmp_Studio">Telegram</a></td>
+                        </tr>
+                        <tr>
+                            <td><a  href="https://instagram.com/kmp__studio"><img src="img/instagram.png" alt="instagram icon" width="30"></td></a>
+                            <td>News & polls</td>
+                            <td><a style="text-decoration: none; color: violet;" href="https://instagram.com/kmp__studio">Instagram</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="text-align: center;"> 
+                    <video style="border-radius: 1rem; background-color: #112D4E;" width="400" height="225" controls>
+                        <source src="files/video.mp4" type="video/mp4">
+                    </video> 
+                    <audio controls>
+                        <source src="files/audio.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p style="margin: 0;" id="foot">All Rights Reserved To <a style="text-decoration: none;" href=""><span style="background-color: #112D4E; color: #F9F7F7; padding: .2rem; border-radius: .3rem;"><i>KMP STUDIO</i></span></a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
